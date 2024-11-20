@@ -18,6 +18,10 @@ jobs:
             - name: Checkout repository
               uses: actions/checkout@v4
 
+            - name: Use token
+              run: |
+                    echo "Token is ${{ secrets.MY_SECRET_TOKEN }}"
+
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
