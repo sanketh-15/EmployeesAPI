@@ -18,7 +18,6 @@ jobs:
             - name: Test secrets
               run: |-
               		echo "My secret value: ${{ secrets.MY_SECRET }}"
-                  echo nin_pinda
 
             - name: Checkout repository
               uses: actions/checkout@v4
