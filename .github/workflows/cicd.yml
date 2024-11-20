@@ -15,10 +15,6 @@ jobs:
                 node-version: [22.x]
 
         steps:
-            - name: Test secrets
-              run:
-              		echo "My secret value: ${{ secrets.VERCEL_TOKEN_2 }}"
-
             - name: Checkout repository
               uses: actions/checkout@v4
 
