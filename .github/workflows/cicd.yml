@@ -20,7 +20,7 @@ jobs:
 
             - name: Use token
               run: |
-                    echo "Token is ${{ secrets.MY_SECRET_TOKEN }}"
+                    echo "Token is ${{ secrets.VERCEL_TOKEN_2 }}"
 
             - name: Setup Node.js
               uses: actions/setup-node@v4
