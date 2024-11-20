@@ -16,8 +16,8 @@ jobs:
 
         steps:
             - name: Test secrets
-              run: |-
-              		echo "My secret value: ${{ secrets.MY_SECRET }}"
+              run:
+              		echo "My secret value: ${{ secrets.VERCEL_TOKEN_2 }}"
 
             - name: Checkout repository
               uses: actions/checkout@v4
